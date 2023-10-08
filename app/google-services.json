@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212831903650",
+    "project_id": "taxmate-4ac4f",
+    "storage_bucket": "taxmate-4ac4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212831903650:android:224198f6245f35cbc85cfb",
+        "android_client_info": {
+          "package_name": "com.example.taxmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212831903650-mha08jo6tdip2fak4caja2s1is5gtdk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrtVGJsyW5dT3TFFaYGaDWI2arflrvyxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212831903650-mha08jo6tdip2fak4caja2s1is5gtdk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF8FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <!-- Section 1: Basic Details -->
+
+            <TextView
+                android:id="@+id/heading_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/prompt_bold"
+                android:text="TaxTrack"
+                android:textAlignment="center"
+                android:textColor="#0C2529"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="76dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/basic_details_label"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="57dp"
+
+                android:fontFamily="@font/prompt_medium"
+                android:text="Basic Details"
+                android:textAlignment="center"
+                android:textColor="#0C2529"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="61dp"
+                android:layout_height="54dp"
+                android:layout_below="@id/imageView3"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="103dp"
+                android:layout_marginRight="0dp"
+                app:srcCompat="@drawable/img" />
+
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/basic_details_label"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Full Name"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/age_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Current Age"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/age_edit_text"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/gender_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Select Your Gender:"
+                    android:textColor="#0C2529"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/male_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Male"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/female_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Female"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/others_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Others"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/metro_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender_radio_group"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/metro_label_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Do You Live In A Metro City"
+                    android:textColor="#0C2529"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/yes_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Yes"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/no_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="No"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+
+
+            </RadioGroup>
+
+
+            <!-- Section 2: Income Details -->
+            <TextView
+                android:id="@+id/income_details_label"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_below="@id/metro_radio_group"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/prompt_medium"
+                android:text="Income Details"
+                android:textAlignment="center"
+                android:textColor="#0C2529"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_below="@id/metro_radio_group"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="147dp"
+                app:srcCompat="@drawable/income" />
+
+
+            <EditText
+                android:id="@+id/salary_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/income_details_label"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Base Salary (Including DA)"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/allowance_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salary_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="All Allowances"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/house_rent_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/allowance_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="House Rent Paid Per Annum"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/loss_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_rent_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Loss From Self Occupied House"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/other_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loss_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Income from Other Sources"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/deduct_details_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/other_edit_text"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/prompt_medium"
+                android:text="Tax Deductions"
+                android:textAlignment="center"
+                android:textColor="#0C2529"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_below="@id/other_edit_text"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="148dp"
+                app:srcCompat="@drawable/tax" />
+
+            <EditText
+                android:id="@+id/sec80c_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deduct_details_label"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Section 80C Deductions"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/medic_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sec80c_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Medical Insurance Premium (Self and Family)"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textColor="#3A3C4C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/parentsmedic_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medic_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Medical Insurance Premium (Parents)"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textColor="#3A3C4C"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/senior_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parentsmedic_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium">
+
+                <TextView
+                    android:id="@+id/senior_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Are Your Parents Senior Citizens"
+                    android:textColor="#0C2529"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/yes2_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="Yes"
+                    android:textColor="#3A3C4C"
+
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/no2_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="No"
+                    android:textColor="#3A3C4C"
+                    android:textSize="14sp" />
+
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/houseloan_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senior_radio_group"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Interest Paid on House Loan"
+                android:textColor="#3A3C4C"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edloan_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/houseloan_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Interest Paid on Education Loan "
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/evloan_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edloan_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="EV Loan Interest Paid"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/donation_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/evloan_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:hint="Charity Donations Maid"
+                android:inputType="number"
+                android:textColor="#3A3C4C"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/savings_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donation_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:textColor="#3A3C4C"
+                android:hint="Interests on Savings Deposits"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/otherdeduct_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/savings_edit_text"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/prompt_medium"
+                android:textColor="#3A3C4C"
+                android:hint="Other Deductions"
+                android:inputType="number"
+                android:textColorHint="#3A3F5C"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherdeduct_edit_text"
+                android:layout_marginTop="130dp"
+                android:backgroundTint="#0C2529"
+                android:fontFamily="@font/prompt_medium"
+                android:text="Calculate Tax Liability"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+

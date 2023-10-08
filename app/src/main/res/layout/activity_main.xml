@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRLContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF8FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--on below line we are adding an image view-->
+
+    <!--on below line we are creating progress bar-->
+
+    <ImageView
+        android:id="@+id/idIVLogo"
+        android:layout_width="130dp"
+        android:layout_height="171dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="302dp"
+        android:src="@drawable/logo" />
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="61dp"
+        android:indeterminateTint="#0C2529" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+
+        android:layout_marginTop="730dp"
+
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="-16dp"
+        android:fontFamily="@font/prompt_medium"
+        android:text="TaxMate"
+        android:textAlignment="center"
+        android:textColor="#0C2529"
+        android:textSize="38sp" />
+
+</RelativeLayout>

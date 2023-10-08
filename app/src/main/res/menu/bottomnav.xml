@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/taxtrackicon"
+        android:icon="@drawable/taxcalculate"
+        android:title="TaxTrack" />
+    <item
+        android:id="@+id/taxsavingbtn"
+        android:icon="@drawable/rupee"
+        android:title="Taxaving" />
+    <item
+        android:id="@+id/dashboardbtn"
+        android:icon="@drawable/logo"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/filestatusbtn"
+        android:icon="@drawable/deadline"
+        android:title="ITR Manager" />
+    <item
+        android:id="@+id/morebtn"
+        android:icon="@drawable/profile"
+        android:title="Settings" />
+<!--    <item-->
+<!--        android:id="@+id/dashboard"-->
+<!--        android:icon="@drawable/"-->
+<!--        android:title="Profile" />-->
+</menu>

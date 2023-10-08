@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF8FF"
+    tools:context=".homepage">
+
+    <ImageView
+        android:id="@+id/idIVLogo"
+        android:layout_width="88dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:layout_width="371dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/prompt_medium"
+        android:text="Your Ultimate Tax Companion."
+        android:textAlignment="center"
+        android:textColor="#5D6567"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/idEdtUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTVHeader"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="399dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/prompt_medium"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:text="TaxMate"
+        android:textAlignment="center"
+        android:textColor="#0C2529"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="233dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#0C2529"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColor="#0C2529"
+        android:textColorHint="#5D6567"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <EditText
+        android:id="@+id/idEdtPassword"
+        android:layout_width="233dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#0C2529"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#5D6567"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <Button
+        android:id="@+id/idBtnRegister"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#143D43"
+        android:fontFamily="@font/prompt_medium"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="122dp"
+        android:layout_height="45dp"
+
+        android:backgroundTint="#3A7B85"
+        android:capitalize="none"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/prompt_medium"
+        android:paddingVertical="0dp"
+        android:text="Register Now!"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prompt_medium"
+        android:text="New to TaxMate?"
+        android:textColor="#5D6567"
+        app:layout_constraintBottom_toTopOf="@+id/button_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnRegister"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

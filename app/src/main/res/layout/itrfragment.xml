@@ -1,0 +1,81 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:background="#EDF8FF">
+
+        <TextView
+            android:id="@+id/reminder_label"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prompt_bold"
+            android:text="Set your ITR Filing Reminders"
+            android:textColor="#0C2529"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itr_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminder_label"
+            android:text="Check your government tax ITR filing dates here!! "
+            android:textColor="#0C2529"
+            android:textSize="18sp"
+
+            android:linksClickable="true"
+            android:layout_marginTop="26dp"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itr_link"
+            android:layout_marginTop="16dp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datePicker"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/lastReminderDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timePicker"
+            android:layout_marginTop="16dp"
+            android:text="Last Set Reminder Date: "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/prompt_medium" />
+
+
+        <Button
+            android:id="@+id/setReminderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastReminderDateTextView"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0C2529"
+            android:text="Set Reminder"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="@font/prompt_medium"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo" />
+    </RelativeLayout>
+</ScrollView>
